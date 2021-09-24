@@ -22,8 +22,47 @@
 ### 9. Dari paket-paket yang menuju FTP terdapat inidkasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
   Gunakan wireshark filter expression : ```ftp-data.command contains "secret.zip"``` untuk menangkap semua paket yang mengandung `secret.zip`
   
-  Hasil : 
+  **Hasil :**
+  
+  ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/8677cf16c56ef234f8bec6a4c79a1e314a693797/pictures/nomor%209a.png)
+
+  Setelah itu `follow tcp stream` salah satu packet dan set show and save data as `Raw` kemudian save file tersebut.
+  
+  ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/8677cf16c56ef234f8bec6a4c79a1e314a693797/pictures/nomor%209b.png)
+
+  **Hasil :**
+  
+  ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/8677cf16c56ef234f8bec6a4c79a1e314a693797/pictures/nomor%209c.png)
+
 ### 10. Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
+  Gunakan wireshark filter expression : ```ftp-data.command contains "history.txt"``` untuk menangkap semua paket yang mengandung `history.txt`
+  
+  **Hasil :**
+  
+  ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/4bacd715d978581dbb7c6d238f5b0d11886be65c/pictures/nomor%2010a.png)
+  
+  Setelah itu `follow tcp stream` paket tersebut untuk melihat history bash tersebut
+  
+  ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/4bacd715d978581dbb7c6d238f5b0d11886be65c/pictures/nomor%2010b.png)
+  
+  Gunakan wireshark filter expression : ```ftp-data.command contains "bukanapaapa.txt"``` karena hint yang ditunjukkan adalah file `bukanapaapa.txt`.
+  
+  ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/a12c3e1a826b6c5b345588c68f2b30789f588e6b/pictures/nomor%2010f.png)
+  
+  
+  Setelah itu `follow tcp stream` paket tersebut dan didalamnya merupakan password dari file yang ada di dalam `secret.zip`
+  
+  ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/a12c3e1a826b6c5b345588c68f2b30789f588e6b/pictures/nomor%2010c.png)
+  
+  Gunakan password tersebut untuk membuka file yang ada di `secret.zip`
+  
+  ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/a12c3e1a826b6c5b345588c68f2b30789f588e6b/pictures/nomor%2010e.png)
+  
+  **Isi File :**
+  
+  ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/a12c3e1a826b6c5b345588c68f2b30789f588e6b/pictures/nomor%2010d.png)
+  
+  
 ### 11. Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80! 
 ### 12. Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 ### 13. Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
