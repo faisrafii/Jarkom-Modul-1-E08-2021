@@ -10,16 +10,37 @@
 kemudian Follow TCP Stream kemudian kita liat pada tulisan **Server**
 
   **Hasil :**
+  
   ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/main/pictures/nomor%201.png?raw=true)
   
 ### 2. Temukan paket dari web-web yang menggunakan basic authentication method!
 **Gunakan filter expression :** `**http.authorization contains Basic**` di display filter
-Kemudian Pada bagian Hypertext Transfer Protocol cari bagian authorization disitu terdapat methodnya
+Kemudian cari bagian authorization disitu terdapat methodnya
 
  **Hasil :**
+ 
  ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/main/pictures/nomor%202.png?raw=true)
  
 ### 3. Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
+Gunakan filter expression : `http.host == "basic.ichimarumaru.tech"` 
+kemudian pada bagian Authorization, spesifik di bagian credentials disitu terdapat username dan password untuk login ke web
+**Hasil :**
+
+ ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/main/pictures/nomor%203.png?raw=true)
+ 
+ **Tampilan Web setelah berhasil Login :**
+![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/main/pictures/nomor%203b.png?raw=true)
+
+Lalu kita jawab pertanyaan yang disediakan yaitu urutan pengkabelan T568A yaitu :
+Urutan ke 1 : Putih Hijau TD+ (data kirim+)
+Urutan ke 2 : Hijau TD- (data kirim-)
+Urutan ke 3 : Putih Orange RD+ (data terima +)
+Urutan ke 4 : Biru NC (tidak dipakai)
+Urutan ke 5 : Putih Biru NC (tidak dipakai)
+Urutan ke 6 : Orange RD- (data terima -)
+Urutan ke 7 : Putih Coklat NC (tidak dipakai)
+Urutan ke 8 : Coklat NC (tidak dipakai)
+
 ### 4. Temukan paket mysql yang mengandung perintah query select!
 ### 5. Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
 ### 6. Cari username dan password ketika melakukan login ke FTP Server!
