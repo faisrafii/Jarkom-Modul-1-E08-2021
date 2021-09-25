@@ -81,6 +81,37 @@ Terlihat ada 3 perintah query select yang seharusnya muncul
 
 Gunakan filter expression : `mysql.query contains "INSERT"`
 
+**Hasil**
+
+![Hasil](https://user-images.githubusercontent.com/81347366/134761906-ab2664dd-1400-43f9-af68-0998a57c5238.png)
+
+Kemudian follow TCP stream
+
+![Hasil](https://user-images.githubusercontent.com/81347366/134761934-3b53186e-d434-4238-bcb5-536e8c169e0c.png)
+
+Didapatkan hasilnya adalah
+
+username : akakanomi
+
+password : pemisah4lautan
+
+login ke web http://portal.ichimarumaru.tech/
+
+**Akan Muncul Tampilan Seperti Ini**
+
+![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/main/pictures/nomor%205c.png?raw=true)
+
+Lalu jawab urutan pengkabelan T568B :
+
+1. Putih - Oranye
+2. Oranye
+3. Putih - Hijau
+4. Biru
+5. Putih - Biru
+6. Hijau
+7. Putih - Coklat
+8. Coklat
+
 ### 6. Cari username dan password ketika melakukan login ke FTP Server!
 ### 7. Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")
 ### 8. Cari paket yang menunjukan pengambilan file dari FTP tersebut!
