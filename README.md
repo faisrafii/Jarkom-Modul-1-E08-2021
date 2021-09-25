@@ -15,6 +15,7 @@ kemudian Follow TCP Stream kemudian kita liat pada tulisan **Server**
 ### 2. Temukan paket dari web-web yang menggunakan basic authentication method!
 **Gunakan filter expression :** `**http.authorization contains Basic**` di display filter
 Kemudian Pada bagian Hypertext Transfer Protocol cari bagian authorization disitu terdapat methodnya
+
  **Hasil :**
  ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/main/pictures/nomor%202.png?raw=true)
  
