@@ -114,6 +114,7 @@ Lalu jawab urutan pengkabelan T568B :
 
 ### 6. Cari username dan password ketika melakukan login ke FTP Server!
   Gunakan wireshark filter expression : ```ftp```
+  
   ![Hasil](pictures/nomor%206a.png)
 
   Kemudian pilih paket yang memiliki detail info AUTH SSL, klik kanan pada baris paket tersebut pilih Follow TCP Stream
