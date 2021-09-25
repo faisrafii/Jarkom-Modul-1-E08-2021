@@ -29,16 +29,25 @@ kemudian pada bagian Authorization, spesifik di bagian credentials disitu terdap
  ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/main/pictures/nomor%203.png?raw=true)
  
  **Tampilan Web setelah berhasil Login :**
+ 
 ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/main/pictures/nomor%203b.png?raw=true)
 
 Lalu kita jawab pertanyaan yang disediakan yaitu urutan pengkabelan T568A yaitu :
+
 Urutan ke 1 : Putih Hijau TD+ (data kirim+)
+
 Urutan ke 2 : Hijau TD- (data kirim-)
+
 Urutan ke 3 : Putih Orange RD+ (data terima +)
+
 Urutan ke 4 : Biru NC (tidak dipakai)
+
 Urutan ke 5 : Putih Biru NC (tidak dipakai)
+
 Urutan ke 6 : Orange RD- (data terima -)
+
 Urutan ke 7 : Putih Coklat NC (tidak dipakai)
+
 Urutan ke 8 : Coklat NC (tidak dipakai)
 
 ### 4. Temukan paket mysql yang mengandung perintah query select!
