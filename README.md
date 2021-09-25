@@ -6,6 +6,12 @@
 3. Aji Rindra Fakhrezi Putra Faisal (05111940000205)
 
 ### 1. Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
+**Gunakan filter expression :** `http.host == ichimarumaru.tech`  di display filter
+kemudian Follow TCP Stream kemudian kita liat pada tulisan **Server**
+  **Hasil :**
+  
+
+kemudian Follow TCP Stream kemudian kita liat pada tulisan **Server**
 ### 2. Temukan paket dari web-web yang menggunakan basic authentication method!
 ### 3. Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
 ### 4. Temukan paket mysql yang mengandung perintah query select!
