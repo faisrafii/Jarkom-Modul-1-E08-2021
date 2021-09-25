@@ -8,11 +8,16 @@
 ### 1. Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! 
 **Gunakan filter expression :** `http.host == ichimarumaru.tech`  di display filter
 kemudian Follow TCP Stream kemudian kita liat pada tulisan **Server**
-  **Hasil :**
-  
 
-kemudian Follow TCP Stream kemudian kita liat pada tulisan **Server**
+  **Hasil :**
+  ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/main/pictures/nomor%201.png?raw=true)
+  
 ### 2. Temukan paket dari web-web yang menggunakan basic authentication method!
+**Gunakan filter expression :** `**http.authorization contains Basic**` di display filter
+Kemudian Pada bagian Hypertext Transfer Protocol cari bagian authorization disitu terdapat methodnya
+ **Hasil :**
+ ![Hasil](https://github.com/faisrafii/Jarkom-Modul-1-E08-2021/blob/main/pictures/nomor%202.png?raw=true)
+ 
 ### 3. Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
 ### 4. Temukan paket mysql yang mengandung perintah query select!
 ### 5. Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
