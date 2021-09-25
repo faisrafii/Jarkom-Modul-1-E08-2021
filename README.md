@@ -114,7 +114,7 @@ Lalu jawab urutan pengkabelan T568B :
 
 ### 6. Cari username dan password ketika melakukan login ke FTP Server!
   Gunakan wireshark filter expression : ```ftp```
-  
+
   ![Hasil](pictures/nomor%206a.png)
 
   Kemudian pilih paket yang memiliki detail info AUTH SSL, klik kanan pada baris paket tersebut pilih Follow TCP Stream
@@ -209,6 +209,7 @@ Gunakan wireshark filter expression : ```src port 80```
 ![Hasil](pictures/nomor%2011a.png)
 
 Berikut hasil paket-paket yang ditangkap:
+
 ![Hasil](pictures/nomor%2011b.png)
 
 ### 12. Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
@@ -218,6 +219,7 @@ Gunakan wireshark filter expression : ```port 21```
 ![Hasil](pictures/nomor%2012a.png)
 
 Dengan menyambungkan FTP menggunakan FileZilla dan melakukan pengiriman file. Berikut hasil paket-paket yang ditangkap di Wireshark:
+
 ![Hasil](pictures/nomor%2012b.png)
 
 
@@ -227,6 +229,7 @@ Gunakan wireshark filter expression : ```dst port 443```
 ![Hasil](pictures/nomor%2013a.png)
 
 Berikut hasil paket-paket yang ditangkap:
+
 ![Hasil](pictures/nomor%2013b.png)
 
 ### 14. Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
@@ -235,6 +238,7 @@ Gunakan wireshark filter expression : ```dst host kemenag.go.id```
 ![Hasil](pictures/nomor%2014a.png)
 
 Berikut hasil paket-paket yang ditangkap:
+
 ![Hasil](pictures/nomor%2014b.png)
 ### 15. Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 Gunakan wireshark filter expression : ```src host  192.168.3.241``` untuk IP : 192.168.3.241
@@ -242,4 +246,5 @@ Gunakan wireshark filter expression : ```src host  192.168.3.241``` untuk IP : 1
 ![Hasil](pictures/nomor%2015a.png)
 
 Berikut hasil paket-paket yang ditangkap:
+
 ![Hasil](pictures/nomor%2015b.png)
