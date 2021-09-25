@@ -113,7 +113,43 @@ Lalu jawab urutan pengkabelan T568B :
 8. Coklat
 
 ### 6. Cari username dan password ketika melakukan login ke FTP Server!
+  Gunakan wireshark filter expression : ```ftp```
+  ![Hasil](pictures/nomor%206a.png)
+
+  Kemudian pilih paket yang memiliki detail info AUTH SSL, klik kanan pada baris paket tersebut pilih Follow TCP Stream
+
+  ![Hasil](pictures/nomor%206b.png)
+  
+  Dan didapatkan detail username serta password sebagai berikut:
+
+  Username : **secretuser**
+
+  Password : **aku.pengen.pw.aja**
+
 ### 7. Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")
+
+  Mencari frame yang mengandung kata “Real.pdf”, dengan  wireshark filter expression : ```frame contains “Real.pdf”```
+
+  ![Hasil](pictures/nomor%207a.png)
+
+  Kemudian follow TCP stream sehingga menghasilkan tampilan seperti berikut
+
+  ![Hasil](pictures/nomor%207b.png)
+
+  Pilih show data as Raw, kemudian simpan dengan klik save as dengan nama 7.zip. Berikut tampilan ketika paket berhasil diunduh:
+
+  ![Hasil](pictures/nomor%207c.png)
+
+  Berikut tampilan isi file 7.zip:
+
+  ![Hasil](pictures/nomor%207d.png)
+
+  Berikut tampilan Real.pdf:
+
+  ![Hasil](pictures/nomor%207e.png)
+
+
+
 ### 8. Cari paket yang menunjukan pengambilan file dari FTP tersebut!
   Gunakan wireshark filter expression : ```ftp.request.command == RETR```
   
@@ -166,7 +202,43 @@ Lalu jawab urutan pengkabelan T568B :
   
   
 ### 11. Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80! 
+
+Gunakan wireshark filter expression : ```src port 80```
+
+![Hasil](pictures/nomor%2011a.png)
+
+Berikut hasil paket-paket yang ditangkap:
+![Hasil](pictures/nomor%2011b.png)
+
 ### 12. Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
+
+Gunakan wireshark filter expression : ```port 21```
+
+![Hasil](pictures/nomor%2012a.png)
+
+Dengan menyambungkan FTP menggunakan FileZilla dan melakukan pengiriman file. Berikut hasil paket-paket yang ditangkap di Wireshark:
+![Hasil](pictures/nomor%2012b.png)
+
+
 ### 13. Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
+Gunakan wireshark filter expression : ```dst port 443```
+
+![Hasil](pictures/nomor%2013a.png)
+
+Berikut hasil paket-paket yang ditangkap:
+![Hasil](pictures/nomor%2013b.png)
+
 ### 14. Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
+Gunakan wireshark filter expression : ```dst host kemenag.go.id```
+
+![Hasil](pictures/nomor%2014a.png)
+
+Berikut hasil paket-paket yang ditangkap:
+![Hasil](pictures/nomor%2014b.png)
 ### 15. Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
+Gunakan wireshark filter expression : ```src host  192.168.3.241``` untuk IP : 192.168.3.241
+
+![Hasil](pictures/nomor%2015a.png)
+
+Berikut hasil paket-paket yang ditangkap:
+![Hasil](pictures/nomor%2015b.png)
